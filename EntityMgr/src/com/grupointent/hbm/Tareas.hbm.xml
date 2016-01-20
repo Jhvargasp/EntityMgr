@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class entity-name="Tareas" table="Tareas">
+		<id name="nombre" column="nombre" type="string" length="100">
+		</id>
+		<property name="vencimiento" type="integer"  column="vencimiento" length="20" not-null="false"></property>
+		<property name="fechaCreac" type="date"  column="fechaCreac" length="255" not-null="false"></property>
+	</class>
+</hibernate-mapping>

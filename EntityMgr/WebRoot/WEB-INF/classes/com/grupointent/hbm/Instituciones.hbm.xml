@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class entity-name="Instituciones" table="dbo.Tbl_IntitucionesEntidades">
+		<id name="id_entidad" column="id_entidad" type="string" length="50">
+		</id>
+		<property name="Nombre" type="string"  column="Nombre" length="400" not-null="false"></property>
+		<property name="Estado" type="string"  column="Estado" length="50" not-null="false"></property>
+	</class>
+</hibernate-mapping>

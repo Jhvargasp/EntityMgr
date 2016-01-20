@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class entity-name="Naturalezas" table="dbo.Tbl_Naturalezas">
+		<id name="Naturaleza" column="Naturaleza" type="string" length="100">
+		</id>
+		<property name="D&#237;as" type="integer" column="Dias" not-null="false"></property>
+		<property name="Notificaci&#243;n" type="string" column="Notificacion" length="10" not-null="false"></property>		
+		<property name="Estado" type="string"  column="Estado" length="50" not-null="false"></property>		
+	</class>
+</hibernate-mapping>

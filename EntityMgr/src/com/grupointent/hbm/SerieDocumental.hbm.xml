@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class entity-name="SerieDocumental" table="dbo.Tbl_SeriesDocumentales">
+		<id name="C&#243;digo serie documental" column="CodSerieDocumental" type="int" >
+		<generator class="increment"/>
+		</id>
+		<property name="Serie o subserie" type="string" column="SerieDocumental" length="50" not-null="false"></property>
+		<property name="Nombre de la serie o subserie" type="string"  column="NombreSerieDocumental" length="300" not-null="false"></property>
+		<property name="Dependencia" type="string"  column="Dependencia" length="200" not-null="false"></property>
+		<property name="Estado" type="string"  column="Estado" length="50" not-null="false"></property>
+	</class>
+</hibernate-mapping>

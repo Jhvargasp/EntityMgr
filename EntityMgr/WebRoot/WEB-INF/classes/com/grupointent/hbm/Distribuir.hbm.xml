@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class entity-name="Distribuir" table="dbo.Tbl_Distribuir">
+		<id name="id_Distribuir" column="id_Distribuir" type="string" length="10">
+		</id>
+		<property name="Distribuir" type="string"  column="Distribuir" length="300" not-null="false"></property>
+		<property name="GrupoDirectorio" type="string"  column="GrupoDirectorio" length="300" not-null="false"></property>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,265 @@
+td {
+	padding: 2px 4px 2px 4px;
+	text-align: left;
+	vertical-align: top;
+/*	font-family: tahoma, arial, helvetica;*/
+	font-family: arial;
+}
+
+thead tr {
+	font-size: 8pt;
+	/*  background-color: #3A9AD3;*/
+	font-family:  arial;
+	color: brown;
+}
+
+th.sorted {
+	background-color: #999999;
+}
+
+th a,th a:visited {
+	color: brown;
+}
+
+th a:hover {
+	text-decoration: blink;
+	color: green;
+}
+
+th.sorted a,th.sortable a {
+	background-position: right;
+	display: block;
+	width: 100%;
+}
+
+th.sortable a {
+	background-image: url(../img/arrow_off.png);
+}
+
+th.order1 a {
+	background-image: url(../img/arrow_down.png);
+}
+
+th.order2 a {
+	background-image: url(../img/arrow_up.png);
+}
+
+tr.odd {
+	background-color: white
+}
+
+
+
+tr.tableRowEven,tr.even {
+	background-color: #efefef
+}
+
+.even {
+	background-color: #efefef
+}
+.odd {
+	background-color: white
+}
+
+ul#showsource {
+	float: right;
+	background-color: #eee;
+	border: 1px dotted #999;
+	padding: 2px 4px 2px 4px;
+	margin: 5px;
+	width: 100px;
+	list-style-type: none;
+}
+
+/* test styles */
+table.its thead tr {
+	background-color: #69c;
+}
+
+table.its tr.even {
+	background-color: #def;
+}
+
+table.mars thead tr {
+	background-color: #9c9;
+}
+
+table.mars tr.even {
+	background-color: #ccb;
+}
+
+table.mars tr.odd {
+	background-color: #eec;
+}
+
+table.simple thead tr {
+	background-color: #eee;
+}
+
+table.simple tr.even {
+	background-color: #fff;
+}
+
+table.simple { /*border: 1px solid #ccc;*/
+	border-collapse: collapse;
+}
+
+table.simple td,table.simple th { /*border: 1px solid #ccc;*/
+	
+}
+
+table.nocol tbody td,table.nocol tbody th {
+	border-left: none;
+	border-right: none;
+}
+
+table.report td,table.report th {
+	font: menu;
+}
+
+table.report th {
+	background: buttonface;
+	/*	border-width: 1px;*/
+	border-style: solid;
+	border-color: threedhighlight threedshadow threedshadow threedhighlight;
+	cursor: hand;
+}
+
+table.report idcol {
+	background: buttonface;
+}
+
+table.report tr.even {
+	background-color: #399;
+}
+
+table.report tbody {
+	height: 100px;
+	overflow: auto;
+}
+
+table.report {
+	height: 120px;
+	overflow: auto;
+}
+
+table.report tbody tr {
+	height: 10px;
+}
+
+table.mark td.tableCellError {
+	background-color: #d00;
+	color: #fff;
+}
+
+table.sublist {
+	margin: 0 0 0 0;
+	width: 100%;
+}
+
+table.sublist td,table.sublist th {
+	width: 50%;
+}
+
+div.exportlinks {
+/*	background-color: #eee;
+	border: 1px dotted #999;
+	padding: 2px 4px 2px 4px;
+	margin: -3px 0 10px 0;
+	width: 100%; */
+}
+
+span.export {
+	padding: 0 4px 1px 20px;
+	display: inline;
+	display: inline-block;
+	cursor: pointer;
+}
+
+span.excel {
+	background-image: url(../img/ico_file_excel.gif);
+}
+
+span.csv {
+	background-image: url(../img/ico_file_csv.gif);
+}
+
+span.xml {
+	background-image: url(../img/ico_file_xml.gif);
+}
+
+span.pdf {
+	background-image: url(../img/ico_file_pdf.gif);
+}
+
+span.pagebanner {
+	/*width: 79%;*/
+	/*
+	background-color: #eee;
+	border: 1px dotted #999;
+	padding: 2px 4px 2px 4px;
+	
+	margin-top: 10px;
+	display: block;
+	border-bottom: none;*/
+}
+
+span.pagelinks {
+	/*width: 79%;*/
+	/*
+	background-color: #eee;
+	border: 1px dotted #999;
+	padding: 2px 4px 2px 4px;
+	display: block;
+	border-top: none;
+	margin-bottom: -5px; */
+}
+
+table.simple td.textRed {
+	color: #b11;
+}
+
+.staticpanel { 
+position: fixed;
+	bottom: 3px;
+	left: 3%;
+	height: 25px;
+	width: 95%;
+	/*border: 1px solid black;
+	background-color: #f0fff0;
+	text-align: center;
+	font-family: arial;
+	font-size: 12pt;
+	font-weight: bold;
+	color: black;
+	padding-top: 10px;
+	cursor: pointer;*/
+}
+#row,#document,#task {
+	width: 100%;
+}
+
+.NEW {
+	font-weight: bold;
+}
+input.required,textarea.required {
+	border: 1px solid #00A8E6;
+}
+
+input.validation-failed,textarea.validation-failed {
+	border: 1px solid #FF3300;
+	color: #FF3300;
+}
+
+input.validation-passed,textarea.validation-passed {
+	border: 1px solid #00CC00;
+	color: #000;
+}
+
+.validation-advice {
+	margin: 5px 0;
+	padding: 5px;
+	background-color: #FF3300;
+	color: #FFF;
+	font-weight: bold;
+}
