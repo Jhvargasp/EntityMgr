@@ -78,7 +78,7 @@ public class ObjectDaoHibernateImpl extends HibernateDaoSupport implements
 		return false;
 	}
 
-	public List<Object> query(String query) {
+	public List<Object> query(String query,boolean fullResults) {
 		log.debug("query:" + query);
 
 		Session session = null;
@@ -108,7 +108,9 @@ public class ObjectDaoHibernateImpl extends HibernateDaoSupport implements
 			e.printStackTrace();
 		}
 		Query query2 = session.createQuery(query);
-		query2.setMaxResults(50);
+		if (!fullResults) {
+			query2.setMaxResults(50);
+		}
 		List l = null;
 		try {
 			l = query2.setCacheable(true).list();

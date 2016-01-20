@@ -19,7 +19,7 @@ public interface ObjectDao {
 
 	public void delete(Object entity);
 
-	public List<Object> query(String query);
+	public List<Object> query(String query,boolean fullResults);
 
 	public List<Object> querySQL(String query);
 
